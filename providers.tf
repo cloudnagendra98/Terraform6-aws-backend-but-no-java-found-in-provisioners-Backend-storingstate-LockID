@@ -7,12 +7,12 @@ terraform {
   }
   required_version = ">= 1.8.4"
   backend "s3" {
-    bucket = "backendfirstbucket"
-    key = "ntier/backend"
-    region = "ap-south-1"
-    dynamodb_table = "firstdynamodblock"
+    bucket         = "daylightbucket12"
+    key            = "ntier-aws/terraform"
+    region         = "us-west-2"
+    dynamodb_table = "mydbbackendtf"
   }
-  
+
 }
 
 provider "aws" {

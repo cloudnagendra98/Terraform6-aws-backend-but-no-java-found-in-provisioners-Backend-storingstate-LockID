@@ -21,6 +21,13 @@ webnsg_config = {
       cidr_block = "0.0.0.0/0"
     },
     {
+      type       = "ingress"
+      protocol   = "tcp"
+      from_port  = 443
+      to_port    = 443
+      cidr_block = "0.0.0.0/0"
+    },
+    {
       type       = "egress"
       protocol   = "-1"
       from_port  = 0
